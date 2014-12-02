@@ -2,11 +2,11 @@
 // @id             iitc-plugin-hack-details@randomizax
 // @name           IITC plugin: Portal Hack Details
 // @category       Layer
-// @version        0.1.4.20141130.231123
+// @version        0.1.4.20141203.015621
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://cdn.rawgit.com/randomizax/hack-details/latest/hack-details.meta.js
 // @downloadURL    https://cdn.rawgit.com/randomizax/hack-details/latest/hack-details.user.js
-// @description    [randomizax-2014-11-30-231123] Show portal hack details on map.
+// @description    [randomizax-2014-12-03-015621] Show portal hack details on map.
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
 // @match          https://www.ingress.com/intel*
@@ -44,9 +44,9 @@ window.plugin.portalHackDetails.setupCSS = function() {
   $("<style>")
     .prop("type", "text/css")
     .html(".plugin-hack-details {\
-            font-size: 10px;\
+            font-size: 12px;\
             color: #BBFFBB;\
-            font-family: monospace;\
+            font-family: sans-serif;\
             text-align: left;\
             text-shadow: 0 0 0.5em black, 0 0 0.5em black, 0 0 0.5em black;\
             pointer-events: none;\
@@ -77,7 +77,8 @@ window.plugin.portalHackDetails.addLabel = function(guid) {
   if (!d) return;
   var hackDetails = window.getPortalHackDetails(d);
   var shortHackInfo = hackDetails.hacks+'@'+formatInterval(hackDetails.cooldown);
-  if (shortHackInfo == '4@5m') return;
+  if (shortHackInfo == '4@5m') shortHackInfo = '-';
+  shortHackInfo = shortHackInfo.replace(' ', '');
   var level = L.marker(latLng, {
     icon: L.divIcon({
       className: 'plugin-hack-details',
