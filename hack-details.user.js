@@ -2,11 +2,11 @@
 // @id             iitc-plugin-hack-details@randomizax
 // @name           IITC plugin: Portal Hack Details
 // @category       Layer
-// @version        0.1.4.20141203.015622
+// @version        0.1.4.20141203.143025
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://rawgit.com/randomizax/hack-details/latest/hack-details.meta.js
 // @downloadURL    https://rawgit.com/randomizax/hack-details/latest/hack-details.user.js
-// @description    [randomizax-2014-12-03-015622] Show portal hack details on map.
+// @description    [randomizax-2014-12-03-143025] Show portal hack details on map.
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
 // @match          https://www.ingress.com/intel*
@@ -45,10 +45,10 @@ window.plugin.portalHackDetails.setupCSS = function() {
     .prop("type", "text/css")
     .html(".plugin-hack-details {\
             font-size: 12px;\
-            color: #BBFFBB;\
+            color: #802266;\
             font-family: sans-serif;\
             text-align: left;\
-            text-shadow: 0 0 0.5em black, 0 0 0.5em black, 0 0 0.5em black;\
+            text-shadow: 0 0 0.5em lightyellow, 0 0 0.5em lightyellow, 0 0 0.5em lightyellow,  0 0 0.5em lightyellow;\
             pointer-events: none;\
             -webkit-text-size-adjust:none;\
           }")
