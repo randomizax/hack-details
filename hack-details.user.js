@@ -2,15 +2,19 @@
 // @id             iitc-plugin-hack-details@randomizax
 // @name           IITC plugin: Portal Hack Details
 // @category       Layer
-// @version        0.1.5.20150131.153412
+// @version        1.0.0.20181124.13837
 // @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
 // @updateURL      https://rawgit.com/randomizax/hack-details/latest/hack-details.meta.js
 // @downloadURL    https://rawgit.com/randomizax/hack-details/latest/hack-details.user.js
-// @description    [randomizax-2015-01-31-153412] Show portal hack details on map.
+// @description    [randomizax-2018-11-24-013837] Show portal hack details on map.
 // @include        https://www.ingress.com/intel*
 // @include        http://www.ingress.com/intel*
+// @include        https://intel.ingress.com/intel*
+// @include        http://intel.ingress.com/intel*
 // @match          https://www.ingress.com/intel*
 // @match          http://www.ingress.com/intel*
+// @match          https://intel.ingress.com/intel*
+// @match          http://intel.ingress.com/intel*
 // @grant          none
 // ==/UserScript==
 
@@ -22,7 +26,7 @@ if(typeof window.plugin !== 'function') window.plugin = function() {};
 //PLUGIN AUTHORS: writing a plugin outside of the IITC build environment? if so, delete these lines!!
 //(leaving them in place might break the 'About IITC' page or break update checks)
 // plugin_info.buildName = 'randomizax';
-// plugin_info.dateTimeVersion = '20150131.153412';
+// plugin_info.dateTimeVersion = '20181124.13837';
 // plugin_info.pluginId = 'hack-details';
 //END PLUGIN AUTHORS NOTE
 
