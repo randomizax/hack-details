@@ -1,16 +1,13 @@
 // ==UserScript==
-// @id             iitc-plugin-hack-details@randomizax
 // @name           IITC plugin: Portal Hack Details
 // @category       Layer
-// @version        1.0.1.@@DATETIMEVERSION@@
-// @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
+// @version        2.0.0.@@DATETIMEVERSION@@
+// @namespace      https://github.com/IITC-CE/ingress-intel-total-conversion
 // @updateURL      @@UPDATEURL@@
 // @downloadURL    @@DOWNLOADURL@@
 // @description    [@@BUILDNAME@@-@@BUILDDATE@@] Show portal hack details on map.
-// @include        https://*.ingress.com/intel*
-// @include        http://*.ingress.com/intel*
-// @match          https://*.ingress.com/intel*
-// @match          http://*.ingress.com/intel*
+// @include        https://intel.ingress.com/*
+// @match          https://intel.ingress.com/*
 // @grant          none
 // ==/UserScript==
 
@@ -74,7 +71,8 @@ window.plugin.portalHackDetails.addLabel = function(guid) {
       iconAnchor: [-window.plugin.portalHackDetails.ICON_SIZE/2, -window.plugin.portalHackDetails.ICON_SIZE/2],
       html: shortHackInfo
       }),
-    guid: guid
+    guid: guid,
+    interactive: false,
   });
   plugin.portalHackDetails.levelLayers[guid] = level;
   level.addTo(plugin.portalHackDetails.levelLayerGroup);

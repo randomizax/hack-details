@@ -1,15 +1,12 @@
 // ==UserScript==
-// @id             iitc-plugin-hack-details@randomizax
 // @name           IITC plugin: Portal Hack Details
 // @category       Layer
-// @version        1.0.1.20190314.160025
-// @namespace      https://github.com/jonatkins/ingress-intel-total-conversion
+// @version        2.0.0.20250420.44627
+// @namespace      https://github.com/IITC-CE/ingress-intel-total-conversion
 // @updateURL      https://randomizax.github.io/hack-details/hack-details.meta.js
 // @downloadURL    https://randomizax.github.io/hack-details/hack-details.user.js
-// @description    [randomizax-2019-03-14-160025] Show portal hack details on map.
-// @include        https://*.ingress.com/intel*
-// @include        http://*.ingress.com/intel*
-// @match          https://*.ingress.com/intel*
-// @match          http://*.ingress.com/intel*
+// @description    [randomizax-2025-04-20-044627] Show portal hack details on map.
+// @include        https://intel.ingress.com/*
+// @match          https://intel.ingress.com/*
 // @grant          none
 // ==/UserScript==
